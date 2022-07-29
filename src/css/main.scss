@@ -39,8 +39,9 @@ li.link {
 .home-container {
   @apply
   relative
-  overflow-hidden
+  overflow-clip
   max-w-[100vw]
+  h-[100vh]
   ;
 }
 
