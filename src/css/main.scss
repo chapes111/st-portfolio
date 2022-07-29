@@ -1,0 +1,720 @@
+/* Reset */
+@import url(./minireset.min.css);
+
+/* Tailwind */
+@import url(../index.css);
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inria+Sans:wght@300;700&display=swap');
+
+/* Custom CSS */
+
+body {
+  @apply
+  bg-light-blue
+  font-sans
+  ;
+}
+
+li.menu > ul.menu-content {
+  @apply
+  hidden
+  ;
+}
+
+nav.nav > ul {
+  @apply
+  flex
+  flex-row
+  justify-between
+  ;
+}
+
+li.link {
+  @apply
+  hidden
+  ;
+}
+
+.home-container {
+  @apply
+  relative
+  overflow-hidden
+  max-w-[100vw]
+  ;
+}
+
+.nav-container {
+  @apply
+  mb-6
+  w-full
+  ;
+
+  li.menu {
+    @apply
+    ml-4
+    mr-3
+    mt-3
+    ;
+  }
+
+  nav > ul > li.logo > a > img {
+      @apply
+      w-full
+      h-full
+      object-fill
+      ;
+  }
+}
+
+.hero-container {
+  @apply
+  mb-16
+  mx-6
+  ;
+
+  h1.headline {
+    @apply
+    max-w-[280px]
+    mb-8
+    text-4xl
+    ;
+  }
+
+  a.hero-cta-button {
+    @apply
+    align-top
+    bg-orange
+    border-4
+    inline-block
+    rotate-3
+    shadow-st
+    text-2xl
+    pl-3
+    pt-3
+    pr-3
+    w-[135px]
+    h-[67px]
+    ;
+
+    &:hover {
+      @apply
+      translate-y-1
+      ;
+    }
+  }
+
+  .arrow-1 {
+    @apply
+    hidden
+    ;
+  }
+
+  .hero-pic-lg { @apply hidden; }
+
+  .hero-pic {
+    @apply
+    inline-block
+    align-top
+    ;
+
+    img.hero-img {
+      @apply
+      absolute
+      ml-7
+      w-24
+      h-24
+      ;
+    }
+
+    img.blob-1 {
+      @apply
+      absolute
+      ml-3
+      w-32
+      h-24
+      -z-10
+      ;
+    }
+  }
+}
+
+img.blob-2 {
+  @apply
+  absolute
+  rotate-90
+  w-full
+  h-full
+  -z-10
+  ;
+}
+
+.yellow { @apply bg-yellow; }
+.purple { @apply bg-purple; }
+.orange { @apply bg-orange; }
+.green { @apply bg-green; }
+
+.cards-container {
+  @apply
+  flex
+  flex-row
+  flex-wrap
+  justify-evenly
+  mx-6
+  ;
+}
+
+.card-container {
+  @apply
+  bg-white
+  border-4
+  mb-6
+  shadow-st
+  w-56
+  ;
+}
+
+.card-content {
+  @apply
+  px-6
+  py-3
+  ;
+}
+
+.card-heading, .form--header {
+  @apply
+  border-b-4
+  py-2
+  px-5
+  ;
+}
+
+.card-icon {
+  @apply
+  inline-block
+  w-8
+  h-8
+  ;
+}
+
+.card--sub-heading {
+  @apply
+  font-light
+  font-secondary
+  inline-block
+  leading-5
+  mb-1
+  ml-1
+  text-sm
+  ;
+}
+
+.card--content-text {
+  @apply
+  text-xl
+  ;
+}
+
+/* Projects */
+
+.projects, .pocs {
+  @apply
+  flex
+  flex-row
+  justify-center
+  mb-6
+  ;
+
+  .projects-heading, .pocs-heading {
+    @apply
+    my-auto
+    text-5xl
+    ;
+  }
+
+  .projects-icon, .pocs-icon {
+    @apply
+    ml-4
+    ;
+  }
+}
+
+img.projects-blob-1 {
+  @apply
+  absolute
+  top-10
+  w-full
+  h-full
+  -z-10
+  ;
+}
+
+img.projects-blob-2 {
+  @apply
+  absolute
+  mt-20
+  -rotate-90
+  w-full
+  h-1/2
+  -z-10
+  ;
+}
+
+/* Contact */
+
+.contact-headline {
+  @apply
+  mb-8
+  mx-6
+  text-4xl
+  ;
+}
+
+.contact-form--container {
+  @apply
+  bg-white
+  border-4
+  mb-6
+  shadow-st
+  mx-auto
+  text-2xl
+  w-72
+  ;
+}
+
+.form--header {
+  @apply
+  bg-yellow
+  ;
+}
+
+.contact-form {
+  @apply
+  px-6
+  py-3
+  ;
+}
+
+.contact-form--label {
+  @apply
+  block
+  text-base
+  ;
+}
+
+.contact-form--input, .contact-form--textarea {
+  @apply
+  font-secondary
+  leading-5
+  mb-1
+  ml-1
+  text-lg
+  w-3/4
+  ;
+}
+
+.submit-button {
+    @apply
+    align-top
+    bg-orange
+    border-4
+    block
+    mx-auto
+    my-0
+    -rotate-6
+    shadow-st
+    text-2xl
+    pl-3
+    pr-3
+    w-[135px]
+    h-[67px]
+    ;
+
+    &:hover {
+      @apply
+      translate-y-1
+      ;
+    }
+}
+
+.contact-aside {
+  @apply
+  hidden
+  ;
+}
+
+.contact-arrow {
+  @apply
+  absolute
+  bottom-56
+  -z-10
+  ;
+}
+
+.blob {
+  @apply
+  absolute
+  bottom-56
+  -z-20
+  ;
+}
+
+@media screen and (min-width: theme('screens.t')) {
+
+  .nav-container {
+
+    nav.nav {
+      @apply
+      w-11/12
+      ;
+    }
+
+    ul {
+      @apply
+      justify-around
+      items-center
+      ;
+    }
+
+    li.menu {
+      @apply
+      hidden
+      ;
+    }
+
+    li.link {
+      @apply
+      inline-block
+      text-3xl
+      ;
+    }
+  }
+
+  .hero-container {
+    @apply
+    flex
+    flex-row
+    flex-wrap
+    ml-10
+    ;
+
+    h1.headline {
+      @apply
+      mt-5
+      text-5xl
+      max-w-full
+      mb-14
+      w-3/5
+      ;
+    }
+
+    a.hero-cta-button {
+      @apply
+      block
+      py-4
+      text-4xl
+      w-[184px]
+      h-[76px]
+      ;
+    }
+
+    .arrow-1 {
+      @apply
+      inline-block
+      w-[188px]
+      h-[136px]
+      ;
+    }
+
+    .hero-pic {
+      @apply
+      hidden
+      ;
+    }
+
+    .hero-pic-lg {
+      @apply
+      inline-block
+      w-2/5
+      ;
+
+      img.hero-img {
+        @apply
+        absolute
+        w-[200px]
+        h-[200px]
+        ;
+      }
+
+      img.blob-1 {
+        @apply
+        absolute
+        w-[300px]
+        h-[200px]
+        -z-10
+        ;
+      }
+    }
+  }
+
+  img.blob-2 {
+    @apply
+    -rotate-45
+    ;
+  }
+
+  .cards-container {
+    @apply
+    justify-around
+    ;
+  }
+
+  .card-container {
+    @apply
+    w-80
+    ;
+
+    .card-heading {
+      @apply
+      text-2xl
+      ;
+    }
+  }
+
+  .card-content {
+
+    .card-entry {
+      @apply
+      pb-3
+      ;
+
+      h6.card--sub-heading {
+        @apply
+        text-lg
+        ;
+      }
+
+      p.card--content-text {
+        @apply
+        pt-2
+        text-[28px]
+        ;
+      }
+    }
+  }
+
+  div.projects, div.pocs {
+    @apply
+    justify-start
+    ml-32
+    ;
+  }
+
+  img.projects-blob-2 {
+    @apply
+    -rotate-45
+    ;
+  }
+
+  /* Contact */
+  h1.contact-headline {
+    @apply
+    mt-16
+    ml-32
+    mb-14
+    text-7xl
+    ;
+  }
+
+  #root > div > div.contact-form--container {
+    @apply
+    inline-block
+    ml-32
+    mr-1
+    w-2/5
+    ;
+  }
+
+  h3.form--header {
+    @apply
+    text-3xl
+    ;
+  }
+
+  label.contact-form--label {
+    @apply
+    text-2xl
+    ;
+  }
+
+  input.contact-form--input {
+    @apply
+    w-11/12
+    ;
+  }
+
+  textarea.contact-form--textarea {
+    @apply
+    w-11/12
+    ;
+  }
+
+  button.submit-button {
+    @apply
+    block
+    ml-52
+    mr-0
+    ;
+  }
+
+  div.contact-aside {
+    @apply
+    relative
+    float-right
+    inline-block
+    w-[36%]
+    h-full
+    ;
+
+    img.mail-icon {
+      @apply
+      hidden
+      /*
+      absolute
+      -top-36
+      w-1/4
+      */
+      ;
+    }
+
+    img.blob {
+      @apply
+      absolute
+      -top-32
+      right-28
+      w-full
+      ;
+    }
+  }
+
+  #root > div > img.blob {
+    @apply
+    hidden
+    ;
+  }
+
+  img.contact-arrow {
+    @apply
+    right-10
+    ;
+  }
+}
+
+
+@media screen and (min-width: theme('screens.d')) {
+
+  .nav-container {
+    @apply
+    mb-20
+    ;
+
+    nav.nav {
+      @apply
+      w-full
+      ;
+
+      ul {
+        @apply
+        justify-end
+        ml-32
+        mr-36
+        ;
+      }
+
+      li.logo {
+        @apply
+        mr-auto
+        ;
+      }
+
+      li.link {
+        @apply
+        ml-auto
+        text-right
+        ;
+      }
+    }
+  }
+
+  .hero-container {
+    @apply
+    ml-32
+    ;
+
+    h1.headline {
+      @apply
+      leading-[86px]
+      text-7xl
+      ;
+    }
+  }
+
+  img.blob-2 {
+    @apply
+    rotate-0
+    top-1/4
+    ;
+  }
+
+  .cards-container {
+    @apply
+    mx-32
+    ;
+  }
+
+  img.projects-blob-2 {
+    @apply
+    -rotate-180
+    ;
+  }
+
+  div.contact-aside {
+    @apply
+    relative
+    float-right
+    inline-block
+    w-[36%]
+    h-full
+    ;
+
+    img.mail-icon {
+      @apply
+      block
+      absolute
+      -top-36
+      w-1/2
+      ;
+    }
+
+    img.blob {
+      @apply
+      absolute
+      -top-32
+      right-28
+      w-full
+      ;
+    }
+  }
+
+  #root > div > img.blob {
+    @apply
+    hidden
+    ;
+  }
+
+  img.contact-arrow {
+    @apply
+    right-10
+    ;
+  }
+}
