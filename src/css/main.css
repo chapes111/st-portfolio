@@ -26,9 +26,8 @@ li.link {
 
 .home-container {
   @apply relative
-  overflow-clip
   max-w-[100vw]
-  h-[100vh];
+  h-full;
 }
 
 .nav-container {
