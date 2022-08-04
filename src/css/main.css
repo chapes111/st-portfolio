@@ -432,6 +432,23 @@ img.projects-blob-2 {
   }
 }
 
+/* mobile menu */
+#root > div > div.nav-container > nav > ul > li.menu > ul.menu-content.toggle {
+  @apply bg-white
+      block
+      absolute
+      p-5
+      shadow-st
+      top-0
+      z-10;
+}
+
+#root > div > div.nav-container > nav > ul > li.menu > ul.menu-content.toggle li.link {
+  @apply block
+          text-2xl
+          p-3;
+}
+
 @media screen and (min-width: theme("screens.d")) {
   .nav-container {
     @apply mb-20;

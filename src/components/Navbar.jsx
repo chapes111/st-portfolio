@@ -7,14 +7,12 @@ import closeIcon from '../images/close-icon.svg'
 const Navbar = () => {
 
   const handleMenuClick = (e) => {
-      console.dir(e)
       e.preventDefault()
 
       e.target.nextSibling.classList.toggle('toggle')
   }
 
   const handleMenuClose = (e) => {
-      console.dir(e)
       e.preventDefault()
 
       e.target.parentNode.classList.toggle('toggle')
